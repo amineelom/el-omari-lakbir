@@ -1,7 +1,7 @@
 title: "My YouTube Blog"
 description: "Every new YouTube upload becomes a blog post automatically."
-url: ""               # Set your custom domain later if you have one
-baseurl: ""           # Leave empty for user.github.io repo; set "/repo" if project pages
+url: "/el-omari-lakbir"               
+baseurl: "https://amineelom.github.io"        
 theme: minima
 paginate: 10
 paginate_path: "/page:num"
