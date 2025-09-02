@@ -1,0 +1,12 @@
+{% comment %}
+Simple include to embed YouTube with privacy-enhanced mode if desired.
+Usage: {% include youtube-privacy.html id="VIDEO_ID" %}
+{% endcomment %}
+<div style="aspect-ratio:16/9; max-width: 960px;">
+  <iframe width="100%" height="100%"
+          src="https://www.youtube.com/embed/{{ include.id }}"
+          title="YouTube video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+</div>
