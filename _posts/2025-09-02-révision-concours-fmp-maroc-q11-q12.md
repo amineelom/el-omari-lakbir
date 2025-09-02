@@ -1,6 +1,6 @@
 ---
 title: "Révision concours FMP Maroc Q11-Q12"
-date: 2025-09-02 20:59:10 
+date: 2025-09-02 21:11:22 
 youtube_id: VQJ26vaYq7w
 image: ""
 ---

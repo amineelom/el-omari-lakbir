@@ -1,6 +1,6 @@
 ---
 title: "Formule de Taylor avec reste de Young"
-date: 2025-09-02 20:59:10 
+date: 2025-09-02 21:11:22 
 youtube_id: rVfIL9wG_bs
 image: ""
 ---

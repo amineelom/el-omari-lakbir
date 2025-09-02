@@ -1,6 +1,6 @@
 ---
 title: "Astuce pour répondre aux concours (Ex Q10 fmp)"
-date: 2025-09-02 20:59:10 
+date: 2025-09-02 21:11:22 
 youtube_id: _6GoJFkZKC8
 image: ""
 ---

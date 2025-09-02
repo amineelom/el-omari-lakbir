@@ -1,6 +1,6 @@
 ---
 title: "la droite y=2x est asymptote à Cf"
-date: 2025-09-02 20:59:10 
+date: 2025-09-02 21:11:22 
 youtube_id: qVLMUK1Wwuw
 image: ""
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Q2 concours d'accès en 1ère Année des ENSA Maroc 2015"
-date: 2025-09-02 20:59:10 
+date: 2025-09-02 21:11:22 
 youtube_id: bMwwbAf6Ewc
 image: ""
 ---

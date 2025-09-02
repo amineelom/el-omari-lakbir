@@ -1,6 +1,6 @@
 ---
 title: "Formule de Taylor avec reste intégral"
-date: 2025-09-02 20:59:10 
+date: 2025-09-02 21:11:22 
 youtube_id: 8Yt9wu69vpA
 image: ""
 ---

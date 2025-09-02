@@ -1,6 +1,6 @@
 ---
 title: "Exercices types concours d'accès aux grandea écoles"
-date: 2025-09-02 20:59:10 
+date: 2025-09-02 21:11:22 
 youtube_id: DPqO6v0La1Q
 image: ""
 ---

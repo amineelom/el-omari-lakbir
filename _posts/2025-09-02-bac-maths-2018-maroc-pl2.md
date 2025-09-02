@@ -1,6 +1,6 @@
 ---
 title: "Bac maths 2018 Maroc pl#2"
-date: 2025-09-02 20:59:10 
+date: 2025-09-02 21:11:22 
 youtube_id: iB_sfDWz_i0
 image: ""
 ---

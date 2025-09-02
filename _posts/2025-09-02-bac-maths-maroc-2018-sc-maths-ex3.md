@@ -1,6 +1,6 @@
 ---
 title: "Bac maths Maroc 2018 (Sc maths Ex3)"
-date: 2025-09-02 20:59:10 
+date: 2025-09-02 21:11:22 
 youtube_id: IP4wFaQugKc
 image: ""
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Formule de Taylor avec reste de Lagrange"
-date: 2025-09-02 20:59:10 
+date: 2025-09-02 21:11:22 
 youtube_id: C1gCwam4Mvo
 image: ""
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Méthodes d'intégration 1 intégrale de la forme F(t,u(t))"
-date: 2025-09-02 20:59:10 
+date: 2025-09-02 21:11:22 
 youtube_id: ysR59hF3Fjo
 image: ""
 ---

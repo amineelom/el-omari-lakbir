@@ -1,6 +1,6 @@
 ---
 title: "surjectivité de f"
-date: 2025-09-02 20:59:10 
+date: 2025-09-02 21:11:22 
 youtube_id: 3CTZPus1-bw
 image: ""
 ---

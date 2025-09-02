@@ -1,6 +1,6 @@
 ---
 title: "Intégrale d'une puissance de sin (t) ou cos (t)"
-date: 2025-09-02 20:59:10 
+date: 2025-09-02 21:11:22 
 youtube_id: QO8kFhr5jtA
 image: ""
 ---

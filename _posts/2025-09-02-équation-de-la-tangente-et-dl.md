@@ -1,6 +1,6 @@
 ---
 title: "Équation de la tangente et D.L."
-date: 2025-09-02 20:59:10 
+date: 2025-09-02 21:11:22 
 youtube_id: Mtb1VLuwsc8
 image: ""
 ---

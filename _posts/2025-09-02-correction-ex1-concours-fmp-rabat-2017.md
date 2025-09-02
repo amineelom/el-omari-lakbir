@@ -1,6 +1,6 @@
 ---
 title: "Correction Ex1 Concours FMP Rabat 2017"
-date: 2025-09-02 20:59:10 
+date: 2025-09-02 21:11:22 
 youtube_id: y8ZCAqqj_Vo
 image: ""
 ---

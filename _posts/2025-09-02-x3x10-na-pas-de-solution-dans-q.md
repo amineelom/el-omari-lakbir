@@ -1,6 +1,6 @@
 ---
 title: "X^3+X+1=0 n'a pas de solution dans Q"
-date: 2025-09-02 20:59:10 
+date: 2025-09-02 21:11:22 
 youtube_id: Nq0hw6eGQrQ
 image: ""
 ---

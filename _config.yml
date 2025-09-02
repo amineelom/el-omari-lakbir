@@ -6,8 +6,7 @@ author: El Omari
 theme: minima
 paginate: 10
 paginate_path: "/page:num"
-# Put your YouTube feed URL here. Example with channel_id:
-# https://www.youtube.com/feeds/videos.xml?channel_id=UC_x5XG1OV2P6uZZ5FSM9Ttw
+
 yt_feed_url: "https://www.youtube.com/feeds/videos.xml?channel_id=UC3CuW4wKl8ttsalfFwbN5kA"
 
 

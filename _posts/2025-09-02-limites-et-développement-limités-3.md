@@ -1,6 +1,6 @@
 ---
 title: "Limites et développement limités 3"
-date: 2025-09-02 20:59:10 
+date: 2025-09-02 21:11:22 
 youtube_id: A5KzNwk7jFY
 image: ""
 ---

@@ -1,6 +1,6 @@
 ---
 title: "limite en 0 de (1-cosx)/x =0"
-date: 2025-09-02 20:59:10 
+date: 2025-09-02 21:11:22 
 youtube_id: wNWSScrcvdM
 image: ""
 ---

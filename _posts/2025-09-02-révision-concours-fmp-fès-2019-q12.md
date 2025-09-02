@@ -1,6 +1,6 @@
 ---
 title: "Révision concours FMP Fès 2019 Q12"
-date: 2025-09-02 20:59:10 
+date: 2025-09-02 21:11:22 
 youtube_id: CLx8GoPeCRk
 image: ""
 ---

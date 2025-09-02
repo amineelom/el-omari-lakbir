@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-import datetime
+import datetime  # <-- ADD THIS
+import os
 import pathlib
 import re
 import textwrap
@@ -7,11 +8,10 @@ import textwrap
 import yt_dlp
 
 # ----- Configuration -----
-channel_url = "https://www.youtube.com/@lakbirelomari"  # Replace with your channel
+channel_url = "https://www.youtube.com/@lakbirelomari"
+
 posts_dir = pathlib.Path("_posts")
 posts_dir.mkdir(parents=True, exist_ok=True)
-
-update_existing = True  # Set True to overwrite existing posts
 
 # ----- Utils -----
 def slugify(value):
@@ -44,7 +44,6 @@ for video in videos:
     thumbnail = video.get("thumbnail", "") or ""
     upload_date = video.get("upload_date", None)
 
-    # Use video upload date if available
     if upload_date:
         try:
             dt = datetime.datetime.strptime(upload_date, "%Y%m%d")
@@ -57,12 +56,9 @@ for video in videos:
     date_str = dt.strftime("%Y-%m-%d")
     md_path = posts_dir / f"{date_str}-{slug}.md"
 
-    # Skip if exists and not updating
-    if md_path.exists() and not update_existing:
-        continue
-
     # Front matter
     safe_title = title.replace('"', "'")
+
     fm = [
         "---",
         f'title: "{safe_title}"',
@@ -84,4 +80,4 @@ for video in videos:
 
     created += 1
 
-print(f"Created or updated {created} post(s).")
+print(f"Created {created} new post(s).")

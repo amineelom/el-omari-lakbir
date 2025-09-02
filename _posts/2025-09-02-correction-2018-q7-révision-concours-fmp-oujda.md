@@ -1,6 +1,6 @@
 ---
 title: "Correction 2018 Q7 révision concours fmp Oujda"
-date: 2025-09-02 20:59:10 
+date: 2025-09-02 21:11:22 
 youtube_id: 0Re77awMuVo
 image: ""
 ---

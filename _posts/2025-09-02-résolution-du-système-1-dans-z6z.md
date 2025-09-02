@@ -1,6 +1,6 @@
 ---
 title: "Résolution du système (1) dans Z/6Z"
-date: 2025-09-02 20:59:10 
+date: 2025-09-02 21:11:22 
 youtube_id: Fp6hY-q9m_A
 image: ""
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Correction Q6-Q7 révision: concours d'enrée aux grandes écoles du Maroc"
-date: 2025-09-02 20:59:10 
+date: 2025-09-02 21:11:22 
 youtube_id: twBjPp3-Opw
 image: ""
 ---

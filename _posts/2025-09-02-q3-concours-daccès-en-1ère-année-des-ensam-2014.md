@@ -1,6 +1,6 @@
 ---
 title: "Q3 concours d'accès en 1ère Année des ENSAM 2014"
-date: 2025-09-02 20:59:10 
+date: 2025-09-02 21:11:22 
 youtube_id: 1A9Nd_HhuDE
 image: ""
 ---

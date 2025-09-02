@@ -1,6 +1,6 @@
 ---
 title: "Résoudre dans Z^2 l'équation 137x-43y=1 algorithme d'euclide"
-date: 2025-09-02 20:59:10 
+date: 2025-09-02 21:11:22 
 youtube_id: UvixnuUXtbA
 image: ""
 ---

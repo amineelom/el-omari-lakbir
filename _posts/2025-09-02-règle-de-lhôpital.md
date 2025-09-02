@@ -1,6 +1,6 @@
 ---
 title: "Règle de l’Hôpital"
-date: 2025-09-02 20:59:10 
+date: 2025-09-02 21:11:22 
 youtube_id: fwa1m5vKF_A
 image: ""
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Domaine de définition de fk(x)"
-date: 2025-09-02 20:59:10 
+date: 2025-09-02 21:11:22 
 youtube_id: GExuXOWEc0c
 image: ""
 ---

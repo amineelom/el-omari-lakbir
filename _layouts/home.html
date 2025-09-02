@@ -9,6 +9,8 @@ title: Home
     <li>
       {% if post.thumbnail %}
         <img src="{{ post.thumbnail | relative_url }}" alt="Thumbnail for {{ post.title }}" class="post-thumbnail" />
+      {% else %}
+        <img src="/assets/images/my-thumbnail.jpg" alt="Default Thumbnail" class="post-thumbnail" />
       {% endif %}
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       <span class="muted"> · {{ post.date | date: "%b %d, %Y" }}</span>
