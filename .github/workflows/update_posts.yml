@@ -1,42 +1,46 @@
 name: Update YouTube Blog Posts
 
-# Run this workflow on push and on a schedule
+# Trigger workflow daily (or adjust as needed)
 on:
-  push:
-    branches:
-      - main
   schedule:
-    - cron: '0 * * * *'  # every hour, adjust as needed
+    - cron: '0 6 * * *'  # every day at 06:00 UTC
+  workflow_dispatch:    # manual trigger
+
+permissions:
+  contents: write  # required to push changes
 
 jobs:
   update-posts:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
+    - name: Checkout repository
+      uses: actions/checkout@v3
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.11'  # match your Python version
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.x"
 
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install feedparser
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install feedparser
 
-      - name: Run RSS to Posts script
-        run: |
-          python scripts/rss_to_posts.py
+    - name: Run RSS to posts script
+      run: |
+        python3 scripts/rss_to_posts.py
 
-      - name: Commit and push changes
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add _posts/
-          git diff --cached --quiet || git commit -m "Update YouTube posts"
-          git push
-        env:
-          # GitHub token to push back
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Commit and push changes
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add _posts
+        if git diff-index --quiet HEAD; then
+          echo "No changes to commit."
+        else
+          git commit -m "Update YouTube posts"
+          git push origin main
+        fi
