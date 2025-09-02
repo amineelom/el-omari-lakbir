@@ -1,7 +1,8 @@
 title: "My YouTube Blog"
 description: "Every new YouTube upload becomes a blog post automatically."
-url: "/el-omari-lakbir"               
-baseurl: "https://amineelom.github.io"        
+baseurl: "/el-omari-lakbir"  # your repo name
+url: "https://amineelom.github.io"  # your GitHub Pages domain
+author: El Omari       
 theme: minima
 paginate: 10
 paginate_path: "/page:num"
