@@ -19,6 +19,13 @@ def slugify(value):
     value = re.sub(r'[-\s]+', '-', value)
     return value[:80] or "video"
 
+def extract_keywords(title):
+    """Simple keyword extraction from title"""
+    words = re.findall(r'\w+', title.lower())
+    stopwords = {"the", "and", "of", "in", "to", "a", "for", "with", "on"}
+    keywords = [w for w in words if w not in stopwords]
+    return keywords[:10]  # limit to 10 keywords
+
 # ----- Fetch videos -----
 ydl_opts = {
     "extract_flat": True,  # Only metadata
@@ -56,29 +63,36 @@ for video in videos:
     date_str = dt.strftime("%Y-%m-%d")
     md_path = posts_dir / f"{date_str}-{slug}.md"
 
-    if md_path.exists():
+    update_existing = True  # set to False if you don't want to update
+    if md_path.exists() and not update_existing:
         continue
 
-        # Front matter
-    safe_title = title.replace('"', "'")  # do this first
+    # SEO-friendly content
+    seo_intro = f"Learn about '{title}' from Lakbir Elomari's YouTube channel. This video covers key points and tutorials for better understanding."
+    keywords = extract_keywords(title)
 
+    # Front matter
+    safe_title = title.replace('"', "'")
     fm = [
         "---",
         f'title: "{safe_title}"',
         f"date: {dt.strftime('%Y-%m-%d %H:%M:%S %z')}",
         f"youtube_id: {video_id}",
         f'image: "{thumbnail}"',
+        f"tags: [{', '.join(keywords)}]",
         "---",
         ""
     ]
 
-
+    # Body with YouTube embed
     body = textwrap.dedent(f"""
     {{% include youtube-privacy.html id="{video_id}" %}}
     """).strip()
 
-    content = "\n".join(fm) + f"description: |\n  " + description.replace("\n", "\n  ") + "\n" + body + "\n"
+    # Combine everything
+    content = "\n".join(fm) + f"description: |\n  " + description.replace("\n", "\n  ") + "\n  " + seo_intro + "\n" + body + "\n"
 
+    # Write to file
     with md_path.open("w", encoding="utf-8") as f:
         f.write(content)
 

@@ -7,6 +7,9 @@ title: Home
   {% assign posts_sorted = site.posts | sort: "date" | reverse %}
   {% for post in posts_sorted limit: 10 %}
     <li>
+      {% if post.thumbnail %}
+        <img src="{{ post.thumbnail | relative_url }}" alt="Thumbnail for {{ post.title }}" class="post-thumbnail" />
+      {% endif %}
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       <span class="muted"> · {{ post.date | date: "%b %d, %Y" }}</span>
       {% if post.excerpt %}<p class="excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>{% endif %}

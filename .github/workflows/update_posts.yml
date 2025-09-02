@@ -27,6 +27,8 @@ jobs:
         python -m pip install --upgrade pip
         pip install feedparser
         pip install yt-dlp
+        pip install nltk rake-nltk yt-dlp
+
 
 
     - name: Run RSS to posts script
