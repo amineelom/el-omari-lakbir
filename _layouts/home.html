@@ -7,8 +7,8 @@ title: Home
   {% assign posts_sorted = site.posts | sort: "date" | reverse %}
   {% for post in posts_sorted limit: 10 %}
     <li>
-      {% if post.thumbnail %}
-        <img src="{{ post.thumbnail | relative_url }}" alt="Thumbnail for {{ post.title }}" class="post-thumbnail" />
+      {% if post.image %}
+        <img src="{{ post.image | relative_url }}" alt="Thumbnail for {{ post.title }}" class="post-thumbnail" />
       {% else %}
         <img src="/assets/images/my-thumbnail.jpg" alt="Default Thumbnail" class="post-thumbnail" />
       {% endif %}

@@ -1,6 +1,6 @@
 ---
 title: "Exercice d'Equations  Différentielles  du 2eme ordre avec Conditions Initiales"
-date: 2025-09-02 21:11:22 
+date: 2025-09-02 21:27:32 
 youtube_id: 2oUmJoj55h0
 image: ""
 ---

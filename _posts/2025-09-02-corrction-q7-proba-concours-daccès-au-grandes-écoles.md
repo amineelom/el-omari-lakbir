@@ -1,6 +1,6 @@
 ---
 title: "Corrction Q7 proba concours d'accès au grandes écoles"
-date: 2025-09-02 21:11:22 
+date: 2025-09-02 21:27:32 
 youtube_id: yvz8AdSCgiA
 image: ""
 ---

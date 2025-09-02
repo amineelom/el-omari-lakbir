@@ -1,6 +1,6 @@
 ---
 title: "Correction Q9-Q10 concours FMP Oujda 2018"
-date: 2025-09-02 21:11:22 
+date: 2025-09-02 21:27:32 
 youtube_id: zGvbGHwRC50
 image: ""
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Etude d'une fonction"
-date: 2025-09-02 21:11:22 
+date: 2025-09-02 21:27:32 
 youtube_id: m64-w20bgu8
 image: ""
 ---

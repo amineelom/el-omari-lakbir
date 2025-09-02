@@ -1,6 +1,6 @@
 ---
 title: "Dénombrement(Arrangement-permutation)"
-date: 2025-09-02 21:11:22 
+date: 2025-09-02 21:27:32 
 youtube_id: oC_PW_Aip18
 image: ""
 ---

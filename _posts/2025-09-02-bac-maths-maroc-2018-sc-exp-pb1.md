@@ -1,6 +1,6 @@
 ---
 title: "Bac maths Maroc 2018 (sc exp pb#1)"
-date: 2025-09-02 21:11:22 
+date: 2025-09-02 21:27:32 
 youtube_id: 0tAEmZa9yFA
 image: ""
 ---

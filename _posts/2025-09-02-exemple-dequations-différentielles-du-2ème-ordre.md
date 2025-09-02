@@ -1,6 +1,6 @@
 ---
 title: "Exemple d'Equations Différentielles du 2ème ordre"
-date: 2025-09-02 21:11:22 
+date: 2025-09-02 21:27:32 
 youtube_id: S9umPow_W7o
 image: ""
 ---

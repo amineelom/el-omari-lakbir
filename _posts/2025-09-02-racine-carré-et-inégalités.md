@@ -1,6 +1,6 @@
 ---
 title: "racine carré et inégalités"
-date: 2025-09-02 21:11:22 
+date: 2025-09-02 21:27:32 
 youtube_id: _q5rRagZ0Hw
 image: ""
 ---

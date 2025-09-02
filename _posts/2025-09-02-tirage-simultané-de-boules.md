@@ -1,6 +1,6 @@
 ---
 title: "Tirage simultané de boules"
-date: 2025-09-02 21:11:22 
+date: 2025-09-02 21:27:32 
 youtube_id: o4WlTTniDYE
 image: ""
 ---

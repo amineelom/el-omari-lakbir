@@ -1,6 +1,6 @@
 ---
 title: "Correction Ex2 : Q14-Q15-Q16 Concours ENSA 2017"
-date: 2025-09-02 21:11:22 
+date: 2025-09-02 21:27:32 
 youtube_id: -AiC36TxMmM
 image: ""
 ---

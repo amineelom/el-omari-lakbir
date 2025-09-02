@@ -1,6 +1,6 @@
 ---
 title: "Correction 2019 Q8 révision concours fmp Fès"
-date: 2025-09-02 21:11:22 
+date: 2025-09-02 21:27:32 
 youtube_id: aeg1VP8SvM0
 image: ""
 ---

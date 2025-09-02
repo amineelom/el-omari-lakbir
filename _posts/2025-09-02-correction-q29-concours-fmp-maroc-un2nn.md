@@ -1,6 +1,6 @@
 ---
 title: "correction Q29 concours fmp Maroc Un=2^n/n!"
-date: 2025-09-02 21:11:22 
+date: 2025-09-02 21:27:32 
 youtube_id: 2wkwZ55OQ58
 image: ""
 ---

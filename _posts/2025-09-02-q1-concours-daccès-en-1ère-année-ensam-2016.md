@@ -1,6 +1,6 @@
 ---
 title: "Q1 concours d'accès en 1ère Année  ENSAM 2016"
-date: 2025-09-02 21:11:22 
+date: 2025-09-02 21:27:32 
 youtube_id: A3T5LTyVAb4
 image: ""
 ---

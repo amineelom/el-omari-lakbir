@@ -19,13 +19,13 @@ def slugify(value):
     return value[:80] or "video"
 
 # ----- Fetch videos -----
-ydl_opts = {
-    "extract_flat": True,  # Only metadata
+ydl_opts_flat = {
+    "extract_flat": False,
     "skip_download": True,
     "quiet": True,
 }
 
-with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+with yt_dlp.YoutubeDL(ydl_opts_flat) as ydl:
     info = ydl.extract_info(channel_url, download=False)
     videos = info.get("entries", [])
     if not videos:
@@ -33,58 +33,58 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
 
 # ----- Generate posts -----
 created = 0
-updated = 0
+ydl_opts_full = {
+    "quiet": True,
+}
 
-for video in videos:
-    if not video:
-        continue
-
-    title = video.get("title", "Untitled") or "Untitled"
-    video_id = video.get("id", "")
-    description = video.get("description", "") or ""
-    thumbnail = video.get("thumbnail", "") or ""
-    upload_date = video.get("upload_date", None)
-
-    # Use video upload date; skip if missing
-    if upload_date:
-        try:
-            dt = datetime.datetime.strptime(upload_date, "%Y%m%d")
-        except:
+with yt_dlp.YoutubeDL(ydl_opts_full) as ydl:
+    for video in videos:
+        if not video:
             continue
-    else:
-        continue
 
-    slug = slugify(title)
-    date_str = dt.strftime("%Y-%m-%d")
-    md_path = posts_dir / f"{date_str}-{slug}.md"
+        # Fetch full metadata for each video
+        video_info = ydl.extract_info(video["url"], download=False) if "url" in video else video
 
-    # Front matter
-    safe_title = title.replace('"', "'")
-    fm = [
-        "---",
-        f'title: "{safe_title}"',
-        f"date: {dt.strftime('%Y-%m-%d %H:%M:%S %z')}",
-        f"youtube_id: {video_id}",
-        f'image: "{thumbnail}"',
-        "---",
-        ""
-    ]
+        title = video_info.get("title", "Untitled") or "Untitled"
+        video_id = video_info.get("id", "")
+        description = video_info.get("description", "") or ""
+        thumbnail = video.get("thumbnail", "") or ""
+        upload_date = video_info.get("upload_date", None)
 
-    body = textwrap.dedent(f"""
-    {{% include youtube-privacy.html id="{video_id}" %}}
-    """).strip()
+        if upload_date:
+            try:
+                dt = datetime.datetime.strptime(upload_date, "%Y%m%d")
+            except:
+                dt = datetime.datetime.utcnow()
+        else:
+            dt = datetime.datetime.utcnow()
 
-    content = "\n".join(fm) + f"description: |\n  " + description.replace("\n", "\n  ") + "\n" + body + "\n"
+        slug = slugify(title)
+        date_str = dt.strftime("%Y-%m-%d")
+        md_path = posts_dir / f"{date_str}-{slug}.md"
 
-    if md_path.exists():
-        # Update existing post
+        safe_title = title.replace('"', "'")
+
+        fm = [
+            "---",
+            f'title: "{safe_title}"',
+            f"date: {dt.strftime('%Y-%m-%d %H:%M:%S %z')}",
+            f"youtube_id: {video_id}",
+            f"thumbnail: \"{thumbnail}\"",   # <-- change from image: to thumbnail:
+            "---",
+            ""
+        ]
+
+
+        body = textwrap.dedent(f"""
+        {{% include youtube-privacy.html id="{video_id}" %}}
+        """).strip()
+
+        content = "\n".join(fm) + f"description: |\n  " + description.replace("\n", "\n  ") + "\n" + body + "\n"
+
         with md_path.open("w", encoding="utf-8") as f:
             f.write(content)
-        updated += 1
-    else:
-        # Create new post
-        with md_path.open("w", encoding="utf-8") as f:
-            f.write(content)
+
         created += 1
 
-print(f"Created {created} new post(s), updated {updated} existing post(s).")
+print(f"Created {created} new post(s).")

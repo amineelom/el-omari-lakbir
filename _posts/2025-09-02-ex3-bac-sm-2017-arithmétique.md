@@ -1,6 +1,6 @@
 ---
 title: "Ex3 Bac SM 2017 (arithmétique)"
-date: 2025-09-02 21:11:22 
+date: 2025-09-02 21:27:32 
 youtube_id: e2IXz8CQchg
 image: ""
 ---

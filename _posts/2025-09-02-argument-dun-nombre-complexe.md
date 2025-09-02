@@ -1,6 +1,6 @@
 ---
 title: "Argument d'un nombre complexe"
-date: 2025-09-02 21:11:22 
+date: 2025-09-02 21:27:32 
 youtube_id: 5Oa9KgznW2o
 image: ""
 ---

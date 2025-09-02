@@ -1,6 +1,6 @@
 ---
 title: "Correction Q20 Concours ENSA2013 (Matrices)"
-date: 2025-09-02 21:11:22 
+date: 2025-09-02 21:27:32 
 youtube_id: -h4WqYh5v8M
 image: ""
 ---

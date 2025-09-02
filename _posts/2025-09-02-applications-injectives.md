@@ -1,6 +1,6 @@
 ---
 title: "Applications injectives"
-date: 2025-09-02 21:11:22 
+date: 2025-09-02 21:27:32 
 youtube_id: T-ZY4z9Lrik
 image: ""
 ---

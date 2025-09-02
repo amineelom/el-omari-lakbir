@@ -1,6 +1,6 @@
 ---
 title: "Si p^m-1 est premier Alors m l'est aussi"
-date: 2025-09-02 21:11:22 
+date: 2025-09-02 21:27:32 
 youtube_id: qF1qItkZyH4
 image: ""
 ---
